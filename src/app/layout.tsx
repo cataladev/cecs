@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   keywords: [
     "UCF CECS", 
     "UCF Engineering", 
+    "UCF IT",
+    "UCF IT Discord",
     "UCF Computer Science", 
     "UCF Computer Engineering", 
     "UCF Electrical Engineering", 
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
   authors: [{ name: "CECS Community Contributors" }],
   openGraph: {
     title: "UCF CECS Community Discord",
-    description: "Connect with fellow UCF CECS students in Computer Science, Engineering and other majors. Share resources, get help, and build your network.",
+    description: "Connect with fellow UCF CECS students in Computer Science, Engineering, Information Technology, and other majors. Share resources, get help, and build your network.",
     url: "https://cecsknights.org",
     siteName: "UCF CECS Community Hub",
     locale: "en_US",
