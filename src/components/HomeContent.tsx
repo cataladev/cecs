@@ -26,13 +26,19 @@ export default function HomeContent() {
         <PageTransition>
           <div className="text-center stagger-fade-in">
             <p className="font-medium text-md text-white mb-2">
-              welcome to
+              Welcome To The
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold 
               bg-gradient-to-r from-[#FFD54F] to-[#C8A93E] 
               bg-clip-text text-transparent
               px-4 sm:px-0">
               CECS Community
+            </h1>
+            <h1 className="text-4xl sm:text-5xl font-bold 
+              bg-gradient-to-r from-[#FFD54F] to-[#C8A93E] 
+              bg-clip-text text-transparent
+              px-4 sm:px-0">
+              Discord
             </h1>
             <p className="text-gray-400 mt-4 max-w-md mx-auto text-sm px-4 sm:px-0">
               Join our Discord server for the unofficial CECS student community. 
