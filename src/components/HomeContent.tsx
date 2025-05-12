@@ -6,6 +6,7 @@ import { cn } from "@/utils/cn";
 import DisclaimerBanner from '@/components/DisclaimerBanner';
 import Footer from '@/components/Footer';
 import PageTransition from '@/components/PageTransition';
+import DiscordWidget from '@/components/DiscordWidget';
 
 export default function HomeContent() {
   return (
@@ -15,7 +16,7 @@ export default function HomeContent() {
           "flex justify-center items-center",
           "min-h-screen",
           "bg-[#121212]",
-          "p-4 sm:p-6",
+          "px-4 py-12 sm:py-16",
           "relative overflow-hidden"
         )}
       >
@@ -24,29 +25,41 @@ export default function HomeContent() {
         
         {/* Content */}
         <PageTransition>
-          <div className="text-center stagger-fade-in">
-            <p className="font-medium text-md text-white mb-2">
-              Welcome To The
-            </p>
-            <h1 className="text-4xl sm:text-5xl font-bold 
-              bg-gradient-to-r from-[#FFD54F] to-[#C8A93E] 
-              bg-clip-text text-transparent
-              px-4 sm:px-0">
-              CECS Community
-            </h1>
-            <h1 className="text-4xl sm:text-5xl font-bold 
-              bg-gradient-to-r from-[#FFD54F] to-[#C8A93E] 
-              bg-clip-text text-transparent
-              px-4 sm:px-0">
-              Discord
-            </h1>
-            <p className="text-gray-400 mt-4 max-w-md mx-auto text-sm px-4 sm:px-0">
-              Join our Discord server for the unofficial CECS student community. 
-              Connect with peers, share resources, and help build our knowledge base.
-            </p>
-          </div>
-          <div className="mt-8 scale-in">
-            <Buttons />
+          <div className="container max-w-6xl mx-auto">
+            {/* Flex container for side-by-side layout */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24">
+              {/* Left column: Text content and buttons */}
+              <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left stagger-fade-in">
+                <p className="font-medium text-md text-white mb-2">
+                  Welcome To The
+                </p>
+                <h1 className="text-4xl sm:text-5xl font-bold 
+                  bg-gradient-to-r from-[#FFD54F] to-[#C8A93E] 
+                  bg-clip-text text-transparent">
+                  CECS Community
+                </h1>
+                <h1 className="text-4xl sm:text-5xl font-bold 
+                  bg-gradient-to-r from-[#FFD54F] to-[#C8A93E] 
+                  bg-clip-text text-transparent mb-4">
+                  Discord
+                </h1>
+                <p className="text-gray-400 mb-8 max-w-lg text-sm">
+                  Join our Discord server for the unofficial CECS student community. 
+                  Connect with peers, share resources, and help build our knowledge base.
+                </p>
+                
+                <div className="scale-in" style={{ animationDelay: '0.7s' }}>
+                  <Buttons />
+                </div>
+              </div>
+              
+              {/* Right column: Discord widget */}
+              <div className="w-full lg:w-1/2 fade-in" style={{ animationDelay: '0.8s' }}>
+                <div className="max-w-md mx-auto lg:ml-auto lg:mr-0">
+                  <DiscordWidget height="480" />
+                </div>
+              </div>
+            </div>
           </div>
         </PageTransition>
         <Footer />

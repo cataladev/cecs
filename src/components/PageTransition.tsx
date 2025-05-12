@@ -15,7 +15,7 @@ export default function PageTransition({ children }: PageTransitionProps) {
   }, []);
 
   return (
-    <div id="page" className="page-transition z-10 w-full max-w-md mx-auto">
+    <div id="page" className="page-transition z-10 w-full mx-auto">
       {children}
     </div>
   );
