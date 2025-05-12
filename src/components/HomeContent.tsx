@@ -49,7 +49,7 @@ export default function HomeContent() {
                 </div>
               </div>
               
-              <div className="w-full lg:w-1/2 fade-in" style={{ animationDelay: '0.8s' }}>
+              <div className="w-full lg:w-1/2 fade-in">
                 <div className="max-w-md mx-auto lg:ml-auto lg:mr-0">
                   <DiscordWidget height="480" />
                 </div>
