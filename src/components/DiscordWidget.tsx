@@ -19,7 +19,6 @@ export default function DiscordWidget({
   const iframeRef = useRef<HTMLIFrameElement>(null);
   
   useEffect(() => {
-    // Set the allowtransparency attribute directly on the DOM element
     if (iframeRef.current) {
       iframeRef.current.setAttribute('allowtransparency', 'true');
     }

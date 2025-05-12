@@ -20,15 +20,11 @@ export default function HomeContent() {
           "relative overflow-hidden"
         )}
       >
-        {/* Background subtle gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#121212] via-[#121212] to-[#1A1A1A] opacity-70"></div>
         
-        {/* Content */}
         <PageTransition>
           <div className="container max-w-6xl mx-auto pb-24">
-            {/* Flex container for side-by-side layout */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24">
-              {/* Left column: Text content and buttons */}
               <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left stagger-fade-in">
                 <p className="font-medium text-md text-white mb-2">
                   Welcome To The
@@ -53,7 +49,6 @@ export default function HomeContent() {
                 </div>
               </div>
               
-              {/* Right column: Discord widget */}
               <div className="w-full lg:w-1/2 fade-in" style={{ animationDelay: '0.8s' }}>
                 <div className="max-w-md mx-auto lg:ml-auto lg:mr-0">
                   <DiscordWidget height="480" />
