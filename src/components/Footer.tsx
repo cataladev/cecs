@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="w-full text-center absolute bottom-6">
+    <footer className="w-full text-center absolute bottom-12 z-10">
       <p className="text-gray-400 text-sm">
         Made with ❤️ by <a 
           href="https://catala.dev" 
@@ -19,4 +19,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

@@ -25,7 +25,7 @@ export default function HomeContent() {
         
         {/* Content */}
         <PageTransition>
-          <div className="container max-w-6xl mx-auto">
+          <div className="container max-w-6xl mx-auto pb-24">
             {/* Flex container for side-by-side layout */}
             <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24">
               {/* Left column: Text content and buttons */}
