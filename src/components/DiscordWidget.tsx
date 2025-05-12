@@ -12,7 +12,6 @@ interface DiscordWidgetProps {
 
 export default function DiscordWidget({
   serverId = '1371563000791564331',
-  inviteCode = 'sWCNrnFxq5',
   theme = 'dark',
   width = '100%',
   height = '480'
